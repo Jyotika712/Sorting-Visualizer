@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+#inputForm {
+    margin-bottom: 20px;
+}
+
+#barsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 700px;
+}
+
+.bar {
+    width: 100px;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: rgb(2, 244, 67);
+    height: 20px;
+    transition: background-color 0.5s;
+    position: relative;
+}
+
+.bar span {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+#timeComplexity {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin-left: 10px;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    width: 200px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: xx-large;
+    border-radius: 5px;
+    border-color: aliceblue;
+    text-align: center;
+    margin-left: 40%;
+    background-color: orangered;
+    color: white;
+}
+
+button:hover {
+    background: #03f40f;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f40f, 0 0 25px #03f40f, 0 0 50px #03f40f, 0 0 100px #03f40f;
+    transition: 0.5s;
+}
+
+input, select {
+    box-sizing: border-box;
+    height: 35px;
+    width: 400px;
+    border-radius: 8px;
+    background-color: white;
+    font-size: x-large;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+    color: orangered;
+}
