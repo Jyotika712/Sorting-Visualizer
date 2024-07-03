@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="inputForm">
+        <form onsubmit="startVisualization(event)">
+            <h1>Sorting Algorithm Visualization</h1>
+            <label for="algorithm">Choose Sorting Algorithm:</label>
+            <select id="algorithm" name="algorithm" onchange="updateTimeComplexity()" required>
+                <option value="bubbleSort">Bubble Sort</option>
+                <option value="selectionSort">Selection Sort</option>
+                <option value="insertionSort">Insertion Sort</option>
+                <option value="mergeSort">Merge Sort</option>
+                <option value="quickSort">Quick Sort</option>
+                <option value="heapSort">Heap Sort</option>
+            </select>
+            <br>
+            <span id="timeComplexity"></span>
+            <br>
+            <label for="arraySize">Enter Array Size:</label>
+            <input type="number" id="arraySize" name="arraySize" required>
+            <br>
+            <label for="arrayElements">Enter Array Elements:</label>
+            <input type="text" id="arrayElements" name="arrayElements" required placeholder="Input numbers separated by spaces">
+            <br>
+            <button id="mybutton" type="submit">Sort</button>
+        </form>
+    </div>
+
+    <div id="barsContainer">
+        <div id="bars"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
